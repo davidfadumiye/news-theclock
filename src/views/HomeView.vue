@@ -2,7 +2,7 @@
   <div>
     <h2 class="container-fluid my-3" style="--bs-text-opacity: .5;">World News</h2>
     <div class="row container-fluid my-5">
-      <div class="col-3 my-2" v-for="news in all_news" :key="news.id">
+      <div class="col-3 my-2np" v-for="news in all_news" :key="news.id">
         <div class="card-group">
           <div class="card" >
             <img :src="news.multimedia[1].url" class="card-img-top" alt="..."/>
