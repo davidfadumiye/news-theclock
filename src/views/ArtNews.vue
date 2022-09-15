@@ -1,8 +1,8 @@
 <template>
   <div>
-    <h2 class="container-fluid my-3" style="--bs-text-opacity: .5;">Home</h2>
+    <h2 class="container-fluid my-3" style="--bs-text-opacity: .5;">Art News</h2>
     <div class="row container-fluid my-5">
-      <div class="col-3 my-2" v-for="news in all_home_news" :key="news.id">
+      <div class="col-3 my-2" v-for="news in all_art_news" :key="news.id">
         <div class="card-group">
           <div class="card">
             <img :src="news.multimedia[1].url" class="card-img-top" alt="..." />
@@ -28,13 +28,13 @@ export default {
   name: 'App',
   data () {
     return {
-      all_home_news: []
+      all_art_news: []
     }
   },
   async mounted () {
-    const results = await axios.get('https://api.nytimes.com/svc/topstories/v2/home.json?api-key=pIvNRqDIX7YlwBksirwimUAqZ77d24Nm')
+    const results = await axios.get('https://api.nytimes.com/svc/topstories/v2/arts.json?api-key=pIvNRqDIX7YlwBksirwimUAqZ77d24Nm')
     console.log(results.data.results)
-    this.all_home_news = results.data.results
+    this.all_art_news = results.data.results
   }
 }
 </script>

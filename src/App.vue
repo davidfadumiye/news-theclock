@@ -14,14 +14,14 @@
               <li class="nav-item">
                 <router-link class="nav-link" aria-current="page" to="/">Home</router-link>
               </li>
+              <!-- <li class="nav-item">
+                <router-link class="nav-link" to="/science">Science News</router-link>
+              </li> -->
               <li class="nav-item">
-                <router-link class="nav-link" to="/about">About</router-link>
+                <router-link class="nav-link" to="/art">Art News</router-link>
               </li>
               <li class="nav-item">
-                <a class="nav-link">World News</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link">Science News</a>
+                <router-link class="nav-link" to="/wrld">World News</router-link>
               </li>
               <!-- <li class="nav-item">
                 <ul class="">
